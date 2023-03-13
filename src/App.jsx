@@ -1,9 +1,8 @@
-import { useState } from 'react'
 import { Header } from './components/Header';
 import styles from './App.module.css';
 import './global.css'
-import { Post } from './components/Posts';
 import { Sidebar } from '../src/components/Sidebar';
+import { Post } from './components/Post';
 
 export function App() {
 
@@ -16,10 +15,8 @@ export function App() {
         <Sidebar />
         
         <main>
-          <Post />
-          <Post />
-          <Post />
-          <Post />
+        <Post />
+        <Post />
         </main>
 
       </div>
