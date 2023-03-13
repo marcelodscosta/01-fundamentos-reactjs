@@ -1,14 +1,28 @@
 import { useState } from 'react'
 import { Header } from './components/Header';
+import styles from './App.module.css';
 import './global.css'
+import { Post } from './components/Posts';
+import { Sidebar } from '../src/components/Sidebar';
 
 export function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div>
       <Header />
-      <h1>Testando</h1>
+
+      <div className={styles.wrapper}>
+        
+        <Sidebar />
+        
+        <main>
+          <Post />
+          <Post />
+          <Post />
+          <Post />
+        </main>
+
+      </div>
     </div>
   )
 }
