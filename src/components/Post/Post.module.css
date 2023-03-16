@@ -101,6 +101,11 @@
     cursor: pointer;
 }
 
+.commentForm button:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
 .commentList {
     margin-top: 2rem;
 }
