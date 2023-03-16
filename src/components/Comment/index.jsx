@@ -7,7 +7,9 @@ export function Comment({ content, deleteComment }) {
     const [like, setLike] = useState(0);
 
     const handleLike = () => {
-        setLike(like + 1);
+        setLike((state) => {
+            return state + 1;
+        });
     }
 
     const handleDeleteComment = () => {
